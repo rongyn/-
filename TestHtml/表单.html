@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<form action="file01.html" method="get">
+			<!--
+				name是给当前一个控件生成的名字
+				size是输入框大小
+				maxlength是限定输入框中输入字符最大个数
+				value是设置当前输入控件的值
+			-->
+			用户名：<input type="text" name="wenben" size="30" maxlength="10"/></br>
+			密码：<input type="password" name="pwd" maxlength="6"/></br>
+				<!--checked="checked",设置列表默认值
+				-->
+			性别：<input type="radio" name="sex" value="boy" checked="checked"/>男 
+				 <input type="radio" name="sex" value="girl"/>女</br>
+			选择你从事过的职业：</br>
+			<input type="checkbox" name="ceshi" value="test"/>测试工程师</br>
+			<input type="checkbox" name="dev" value="dev" checked="checked"/>开发工程师</br>
+			<input type="checkbox" name="yunwei" value="linux"/>运维工程师</br>
+			<input type="checkbox" name="chanpin" value="pr"/>产品经理</br>
+			选择您的籍贯：<select>
+				<option value="hebei">河北</option>
+				<!--selected=selected,设置列表默认值
+				-->
+				<option selected=selected value="beijing">北京</option>
+			</select><br>
+			写出您个人情况<br>
+			<textarea cols="30" rows="5">
+			</textarea></br>
+			
+			<input type="button" name="btn" value="普通按钮"></br>
+			<input type="reset" name="res" value="重置按钮"></br>
+			<input type="submit" name="sub" value="提交按钮"></br>
+			日期选择器选择日期<input type="date"></br>
+			邮箱<input type="email"/></br>
+			文件<input type="file"/></br>
+		</form>
+	</body>
+</html>
